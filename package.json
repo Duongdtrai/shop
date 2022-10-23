@@ -1,0 +1,28 @@
+{
+	"name": "swagger-api-library",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"dev": "nodemon --exec ts-node ./src/server.ts",
+		"prod": "npm run build && npm run start",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.1",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"lowdb": "^1.0.0",
+		"mongoose": "^6.6.7",
+		"morgan": "^1.10.0",
+		"nanoid": "^3.1.20",
+		"nodemon": "^2.0.20",
+		"swagger-jsdoc": "^6.0.1",
+		"swagger-ui-express": "^4.1.6"
+	}
+}
